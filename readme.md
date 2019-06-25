@@ -6,6 +6,7 @@ This project is a quick, custom pre-configured starter to use ES6 and Vue. This 
 * Babel
 * Vue
 * SASS compilation to CSS files
+# normalize.css reset
 
 # Installation
 * clone the repository
