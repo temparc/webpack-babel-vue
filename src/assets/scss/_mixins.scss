@@ -1,0 +1,23 @@
+/*
+* Mixins
+*/
+
+@mixin container() {
+  max-width: $container-width;
+  display: block;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  &.small {
+    max-width: $container_width_small;
+  }
+}
+
+@mixin button() {
+  border: 2px solid $secondary;
+  background: $white;
+  color: $primary !important;
+  text-decoration: none !important;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
