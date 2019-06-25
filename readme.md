@@ -6,13 +6,13 @@ This project is a quick, custom pre-configured starter to use ES6 and Vue. This 
 * Babel
 * Vue
 * SASS compilation to CSS files
-# normalize.css reset
 
 # Installation
 * clone the repository
-* run ``` npm install ``` to install dependencies
-* run ``` npm run build ``` to build initial bundle
-* navigate to ```index.html``` in your browser
+* run ``` npm install```
+* run ```npm update```
+* set up whatever local server you use, and point your document root to the ```/dist``` folder
+* navigate to your local domain to load ```index.html``` in your browser
 * set up your back end if necessary
 
 # Build Commands
