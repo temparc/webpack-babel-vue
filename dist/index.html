@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack-Babel-Vue</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+<!-- header & nav -->
+<header>
+    <div class="top">
+        <div class="container">
+
+            <!-- top nav -->
+            <nav>
+                <ul class="left">
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a class="icon" href="tel:1231231234"><span class="phone"></span>123-123-1234</a></li>
+                    <li><a class="icon" href="mailto:info@website.com"><span class="email"></span>info@website.com</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="bottom">
+
+        <div class="container" aria-label="Menu">
+
+            <!-- main nav -->
+            <nav>
+
+                <ul class="left">
+                    <li><a class="brand" href=""><img height="40" width="40" src="https://temparcweb.com/wp-content/themes/temparcweb/assets/images/temparc-tree-black.svg" alt="Logo"></a></li>
+                </ul>
+
+                <!-- mobile toggle -->
+                <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+                <input id="toggle-mobile-menu" type="checkbox" />
+
+                <ul class="right">
+                    <li class="dropdown">
+                        <a href="#">What We Do</a>
+                        <ul>
+                            <li><a href="/service-1/">A Service 1</a></li>
+                            <li><a href="/service-2/">Another Service 2</a></li>
+                            <li><a href="/service-3/">Last Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/team/">Meet the Team</a></li>
+                    <li><a href="/testimonials/">Testimonials</a></li>
+                    <li><a href="/workshops/">Workshops</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/videos/">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- main content -->
+<div class="site-content">
+    <main id="app">
+
+        <!-- hero -->
+        <section class="hero home"></section>
+
+        <!-- text section -->
+        <section class="center">
+            <div class="container small">
+                <h2>Webpack-Babel-Vue Boilerplate</h2>
+                <p>A quick setup to get up-and-running with Webpack, ES6, and Vue. This front-end boilerplate is configured to work with SCSS out-of-the-box, and pipes all your assets through Webpack. You can plug in any back end you want.</p>
+            </div>
+        </section>
+
+        <!-- coloured section -->
+        <section class="coloured center services">
+            <div class="container small">
+                <h2>A coloured section</h2>
+                <span class="keyline"></span>
+                <div class="row">
+                    <div class="col half">
+                        <h3>Lorem ipsum</h3>
+                        <h4>Lorem ipsum dolor site amet</h4>
+                        <img src="" alt="Estate Planning">
+                        <p>Our insightful expertise allows you to focus on your business priorities, while we focus on optimizing your business.</p>
+                        <p><a href="#">Buy a plan</a></p>
+                        <a class="button" href="/estate-planning/">Learn More</a>
+                    </div>
+                    <div class="col half">
+                        <h3>Lorem ipsum</h3>
+                        <h4>Lorem ipsum dolor site amet</h4>
+                        <img src="" alt="Estate Planning">
+                        <p>Our insightful expertise allows you to focus on your business priorities, while we focus on optimizing your business.</p>
+                        <p><a href="#">Buy a plan</a></p>
+                        <a class="button" href="/estate-planning/">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container small">
+                <h4>The content below is generated dynamically by Vue</h4>
+                <p>catMessage : {{ catMessage }}</p>
+                <p>dogMessage : {{ dogMessage }}</p>
+                <app-component></app-component>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Footer content here.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>
