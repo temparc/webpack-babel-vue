@@ -10,7 +10,8 @@ This project is a quick, custom pre-configured starter to use ES6 and Vue. This 
 
 # Installation
 * clone the repository
-* run ``` npm install ```
+* run ``` npm install ``` to install dependencies
+* run ``` npm run build ``` to build initial bundle
 * navigate to ```index.html``` in your browser
 * set up your back end if necessary
 
