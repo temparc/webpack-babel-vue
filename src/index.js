@@ -8,7 +8,7 @@ This is the starting point the JS application running through Webpack.
  */
 import _ from 'lodash';
 import Vue from 'vue';
-import './assets/scss/main.scss';
+import './assets/scss/main.scss'; // main scss file
 import {Dog} from './dog.js'; // named imports, export does not use "default" and curly braces required
 import catSays from './cat.js'; //
 
@@ -28,4 +28,6 @@ var app = new Vue({
         'app-component': AppComponent
     }
 });
+
+
 
