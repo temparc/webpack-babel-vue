@@ -1,0 +1,36 @@
+/**
+* Heros
+*/
+
+.hero {
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+
+  @media ( max-width: $screen-md ) {
+    height: 300px;
+  }
+
+  @media ( max-width: $screen-sm ) {
+    height: 200px;
+  }
+
+  @media ( max-width: $screen-xs ) {
+    height: 150px;
+  }
+
+  &.home {
+    background-image: url('../images/photos/hero.jpg');
+
+    @media ( max-width: $screen-xs ) {
+      background-image: url('../images/photos/hero.jpg');
+    }
+  }
+}

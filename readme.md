@@ -9,8 +9,10 @@ This project is a quick, custom pre-configured starter to use ES6 and Vue. This 
 
 # Installation
 * clone the repository
-* run ``` npm install ```
-* navigate to ```index.html``` in your browser
+* run ``` npm install```
+* run ```npm update```
+* set up whatever local server you use, and point your document root to the ```/dist``` folder
+* navigate to your local domain to load ```index.html``` in your browser
 * set up your back end if necessary
 
 # Build Commands

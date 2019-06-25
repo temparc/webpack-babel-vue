@@ -1,0 +1,13 @@
+/*
+* Footer
+*/
+
+footer {
+  padding: $section_padding;
+  background: $body_text_color;
+  color: $white;
+
+  @media ( max-width: $screen-xs ) {
+    padding: $section_padding_mobile;
+  }
+}

@@ -1,3 +1,30 @@
-$primary: red;
-$secondary: blue;
-$nav_text_color: #fff;
+/*
+* Variables
+*/
+
+// colors
+$primary: #007dbf;
+$secondary: #80d2ff;
+$white: #fff;
+$black : #333;
+$nav_text_color: $white;
+$body_text_color: $black;
+
+// grid
+$container_width: 1140px;
+$container_width_small: 800px;
+
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$menu-breakpoint: $screen-md;
+
+// sections
+$section_padding: 3rem 0rem;
+$section_padding_single: 3rem;
+$section_padding_mobile: 1rem 0rem;
+$section_padding_single_mobile: 1rem;
+
+// fonts
+$font-regular: 'Avenir Book';
+$font-headings: 'Garamond';

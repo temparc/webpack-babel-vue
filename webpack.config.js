@@ -14,7 +14,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: "/dist"
+        publicPath: "./"
     },
     module: {
         rules: [
@@ -42,7 +42,26 @@ module.exports = {
                 // vue component templates
                 test: /\.vue$/,
                 loader: 'vue-loader'
-            }
+            },
+            {
+                // fonts
+                test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
+                use: [
+                    {
+                        loader: "file-loader?name=/fonts/[name].[ext]", // set the directory you want the bundled files output to
+                    },
+                ],
+            },
+            {
+                // images
+                test: /\.(svg|png|jpeg|jpg)([\?]?.*)$/,
+                use: [
+                    {
+                        loader: "file-loader?name=/images/[name].[ext]", // set the directory you want the bundled files output to
+                    },
+                ],
+            },
+
         ]
     },
     resolve: {

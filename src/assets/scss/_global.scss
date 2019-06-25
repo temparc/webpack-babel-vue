@@ -1,11 +1,131 @@
 /*
 Main Content Wrapper
 */
+body, html {
+  font-family: $font-regular;
+  font-size: 100%; // root rem 16px
+  z-index: 0;
+  position: relative;
+}
+
 .site-content {
-  padding: 0px 15px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 main {
   background: #f6f6f6;
   color: $secondary;
+}
+
+.container {
+  @include container();
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media ( max-width: $screen-xs ) {
+    flex-wrap: nowrap;
+  }
+
+  .col {
+    padding: 0 1rem;
+
+    &.half {
+      flex-basis: calc( 50% - 2rem );
+
+      @media ( max-width: $screen-xs ) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+section {
+  padding: $section_padding;
+
+  @media ( max-width: $screen-xs ) {
+    padding: $section_padding_mobile;
+  }
+
+  &.center {
+    text-align:center;
+  }
+
+  &.coloured {
+    background: $primary;
+    color: $white;
+
+    h1,h2,h3,h4,h5,h6,p,li, a {
+      color: $white;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $primary;
+  font-family: $font-headings;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.7rem;
+  color: $body_text_color;
+}
+
+.keyline {
+  height: 3px;
+  display: block;
+  margin: 0 auto;
+  margin-top: $section_padding_single;
+  margin-bottom: $section_padding_single;
+  background: $secondary;
+  width: 60px;
+}
+
+.button {
+  @include button();
 }
